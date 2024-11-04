@@ -13,7 +13,7 @@ document.querySelectorAll('.tab-link').forEach(link => {
     });
 });
 
-// Form Pesanan
+// Form Pemesanan
 document.getElementById('orderForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
