@@ -1,7 +1,16 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 /* Gaya Navigasi */
 nav {
-    background-color: #333;
-    padding: 10px;
+    background-color: #2b2f33;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -9,104 +18,138 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover, .tab-link.active {
-    color: #4CAF50;
+    color: #f4a261;
 }
 
-/* Gaya Logo */
 nav .logo {
-    height: 40px;
-    margin-right: 15px;
-    vertical-align: middle;
+    height: 50px;
 }
 
-/* Tab Konten */
-.tab-content {
-    display: none;
-    padding: 20px;
+/* Konten Utama */
+header {
+    text-align: center;
+    padding: 40px;
+    background: #2b2f33;
+    color: white;
 }
 
-.tab-content.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
-}
-
-/* Gaya Utama untuk Home */
 header h1 {
-    font-size: 2em;
-    color: #4CAF50;
+    font-size: 2.5em;
+    color: #f4a261;
 }
 
 header p {
     font-size: 1.2em;
-    color: #333;
+    margin-top: 10px;
 }
 
+/* Tombol Join Server */
 .join-button {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    padding: 12px 25px;
+    background-color: #f4a261;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .join-button:hover {
-    background-color: #3e8e41;
+    background-color: #e76f51;
+    transform: scale(1.05);
 }
 
-/* Rank Card Styling */
+/* Rank Section */
+.ranks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
 .rank-card {
     background-color: #f5f5f5;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 150px;
     text-align: center;
-    width: 120px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.rank-card:hover {
+    transform: translateY(-5px);
 }
 
 .rank-card img {
-    width: 100%;
-    height: auto;
-    max-width: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 10px;
 }
 
-/* Gaya Formulir */
+/* Form Section */
 .form-section {
-    text-align: center;
-    margin-top: 20px;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    text-align: center;
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form select, form button {
+    width: 100%;
     padding: 10px;
-    background-color: #333;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #f4a261;
     color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e76f51;
+}
+
+/* Footer */
+footer {
+    background-color: #2b2f33;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
     margin-top: 20px;
 }
 
-/* Animasi */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+footer a {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: bold;
 }
