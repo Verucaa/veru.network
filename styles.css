@@ -40,7 +40,7 @@ nav .logo {
 header {
     text-align: center;
     padding: 40px;
-    background: #2b2f33;
+    background: #000080;
     color: white;
 }
 
@@ -59,7 +59,7 @@ header p {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #f4a261;
+    background-color: #0000ff;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -69,7 +69,7 @@ header p {
 }
 
 .join-button:hover {
-    background-color: #e76f51;
+    background-color: #0000ff;
     transform: scale(1.05);
 }
 
