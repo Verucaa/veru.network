@@ -141,7 +141,7 @@ form button:hover {
 
 /* Footer */
 footer {
-    background-color: #0000ff;
+    background-color: #2b2f33;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -149,7 +149,7 @@ footer {
 }
 
 footer a {
-    color: #0000ff;
+    color: #2b2f33;
     text-decoration: none;
     font-weight: bold;
 }
