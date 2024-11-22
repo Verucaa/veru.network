@@ -20,7 +20,7 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
     const username = document.getElementById('username').value;
     const rank = document.getElementById('rank').value;
 
-    const whatsappNumber = '62XXXXXXXXXX'; // Ganti dengan nomor WhatsApp kamu
+    const whatsappNumber = '62838346265078'; // Ganti dengan nomor WhatsApp kamu
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Halo%20Admin,%20saya%20ingin%20membeli%20rank%20${rank}%20untuk%20username%20${username}`;
 
     // Redirect ke WhatsApp
